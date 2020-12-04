@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Muscle-Masons
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-----future link ----
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Muscle-Masons is an interactive fitness app built in React with an Airtable database.  The app allows users to view and update a collection of exercises which can be sorted by the main muscles worked by the exercise. The user also has the ability to create a workout routine.
 
-### `npm start`
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The wireframes below depict the homepage Muscle-Masons in web and phone format. The homepage contains a header with a Nav Bar. The Nav Bar contains links to the Home Page, the add a workout page, and the users workout routine page.  The main section has clickable exercise previews that can be added to the users routine or detleted. When Clicked the exercises will route the user to a page of more information on that specific exercise. The screens will center as screen size decreases.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![imageAlt](https://i.imgur.com/QOv7fU7.png)
+![imageAlt](https://i.imgur.com/oQ4tM1i.png)
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![imageAlt](https://i.imgur.com/eo07ZVV.png)
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://api.airtable.com/v0/appaz3L4HYo4zJ3e3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Airtable is returning the data for this base as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+{
+    "records": [
+        {
+            "id": "recrf2aXw7RHXaRcV",
+            "fields": {
+                "name": "Push-Up",
+                "target": "Chest/Shoulders",
+                "directions": "Start in a  plank position with your arms straight. Your shoulders should be over your wrists and your body should form a straight line. Keep your cor...",
+                "reps": 20,
+                "Equipment": "Bodyweight",
+                "intensity": 3
+            },
+            "createdTime": "2020-12-04T04:28:29.000Z"
+        },
+        {
+            "id": "recTRdwALxYo82BDa",
+            "fields": {
+                "name": "Sit-Up",
+                "target": "Core",
+                "intensity": 2,
+                "directions": "Lie down on your back, bend your legs and place feet firmly on the ground with your hands to opposite shoulders or behind your head. Curl your upper b...",
+                "reps": 25,
+                "Equipment": "bodyweight"
+            },
+            "createdTime": "2020-12-04T04:28:29.000Z"
+        },
+        {
+            "id": "rec23kLz1eE8a0k8Z",
+            "fields": {
+                "name": "Arnold-Press",
+                "target": "Shoulders",
+                "directions": "Start seated with a flat back or standing and core engaged. Hold a pair of dumbbells at the shoulders palms facing in elbows tight to body. Press up r...",
+                "reps": 8,
+                "Equipment": "Dumbbells",
+                "intensity": 4
+            },
+            "createdTime": "2020-12-04T04:28:29.000Z"
+        }
+    ],
+    "offset": "rec23kLz1eE8a0k8Z"
+}
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### MVP/PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### MVP
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Home page with clickable links and exercises.
+- Form page to add exercises to the Airtable data set which show on Home Page.
+- Button to Delete exercises.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### PostMVP
 
-## Learn More
+- Collaborate with a UX student to make the UI more attractive/user-friendly.
+- Allow users to filter exercises through a dropdown menu
+- Option to add exercises to a page that displays added exercises as a routine.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Schedule
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Day      | Deliverable                                | Status   |
+| -------- | ------------------------------------------ | -------- |
+| Dec 04 | Proposal Approval / Airtable Setup         | Incomplete |
+| Dec 04   | Component Creation                     | Incomplete |
+| Dec 07   | Get, Set, Delete Data               | Incomplete |
+| Dec 07   | CSS Components                           | Incomplete |
+| Dec 10   | MVP                                        | Incomplete |
+| Dec 11   | Advanced CSS                               | Incomplete |
+| Dec 12   | Presentations                              | Incomplete |
 
-### Code Splitting
+## Timeframes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                  |    H     |      2hrs      |     --    |   --   |
+| Airtable setup            |    H     |     1hrs       |     --    |   --   |
+| Nav Bar/Header            |    H     |      3hrs      |     --    |   --   |
+| Main Page                 |    H     |      3hrs      |     --    |   --   |
+| Create Page               |    H     |      3hrs      |     --    |   --   |
+| Routine Page              |    H     |      3hrs      |     --    |   --   |
+| Form creation             |    H     |      3hrs      |     --    |   --   |
+| Link form to Airtable     |    H     |      3hrs      |     --    |   --   |
+| Link routine to Airtable  |    H     |      3hrs      |     --    |   --   |
+| React mapping and logic   |    H     |      3hrs      |     --    |   --   |
+| Linking and Routing       |    H     |      2hrs      |     --    |   --   |
+| Data deletion             |    H     |      2hrs      |     --    |   --   |
+| CSS Routine               |    H     |      3hrs      |     --    |   --   |
+| CSS Homepage              |    H     |      3hrs      |     --    |   --   |
+| CSS Showpage              |    H     |      3hrs      |     --    |   --   |
+| CSS Form                  |    H     |      3hrs      |     --    |   --   |
+| Total                     |    H     |      43hrs     |     --    |   --   |
 
-### Analyzing the Bundle Size
+## SWOT Analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Strengths:
 
-### Making a Progressive Web App
+I have a good understanding of what i want my application to look like and what exactly I want it to do. As such, I can better plan for what needs to be done and how long it will take. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Weaknesses:
 
-### Advanced Configuration
+Taking the project and breaking down the task at hand into smaller parts.  I get stressed out thinnking about the whole task instead of trying to tackle it a little bit at a time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Opportunities:
 
-### Deployment
+To create a portfolio show piece that I am prod to show off. This app could be something useable and useful
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Threats:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Adding functionality to various components that I think is cool or I just learned about while I still don't have my mvp complete. 
