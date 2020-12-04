@@ -11,6 +11,7 @@ Muscle-Masons is an interactive fitness app built in React with an Airtable data
 The wireframes below depict the homepage Muscle-Masons in web and phone format. The homepage contains a header with a Nav Bar. The Nav Bar contains links to the Home Page, the add a workout page, and the users workout routine page.  The main section has clickable excersize previews that can be added to the users routine or detleted. When Clicked the Excersizes will route the user to a page of more information on that specific excersize. The screens will center as screen size decreases.
 
 ![imageAlt](https://i.imgur.com/QOv7fU7.png)
+![imageAlt](https://i.imgur.com/oQ4tM1i.png)
 
 ## Component Hierarchy
 
