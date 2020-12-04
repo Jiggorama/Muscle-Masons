@@ -4,11 +4,11 @@
 
 ## Project Description
 
-Muscle-Masons is an interactive fitness app built in React with an Airtable database.  The app allows users to view and update a collection of excersizes which can be sorted by the main muscles worked by the excersize. The user also has the ability to create a workout routine.
+Muscle-Masons is an interactive fitness app built in React with an Airtable database.  The app allows users to view and update a collection of exercises which can be sorted by the main muscles worked by the exercise. The user also has the ability to create a workout routine.
 
 ## Wireframes
 
-The wireframes below depict the homepage Muscle-Masons in web and phone format. The homepage contains a header with a Nav Bar. The Nav Bar contains links to the Home Page, the add a workout page, and the users workout routine page.  The main section has clickable excersize previews that can be added to the users routine or detleted. When Clicked the Excersizes will route the user to a page of more information on that specific excersize. The screens will center as screen size decreases.
+The wireframes below depict the homepage Muscle-Masons in web and phone format. The homepage contains a header with a Nav Bar. The Nav Bar contains links to the Home Page, the add a workout page, and the users workout routine page.  The main section has clickable exercise previews that can be added to the users routine or detleted. When Clicked the exercises will route the user to a page of more information on that specific exercise. The screens will center as screen size decreases.
 
 ![imageAlt](https://i.imgur.com/QOv7fU7.png)
 ![imageAlt](https://i.imgur.com/oQ4tM1i.png)
@@ -72,15 +72,15 @@ Airtable is returning the data for this base as follows:
 
 #### MVP
 
-- Home page with clickable links and excersizes.
-- Form page to add excersizes to the Airtable data set which show on Home Page.
-- Button to Delete Excersizes.
-- Button to add excersizes to a page that displays added excersizes as a routine.
+- Home page with clickable links and exercises.
+- Form page to add exercises to the Airtable data set which show on Home Page.
+- Button to Delete exercises.
 
 #### PostMVP
 
 - Collaborate with a UX student to make the UI more attractive/user-friendly.
-- Allow users to filter excersizes through a dropdown menu
+- Allow users to filter exercises through a dropdown menu
+- Option to add exercises to a page that displays added exercises as a routine.
 
 ## Project Schedule
 
@@ -88,7 +88,7 @@ Airtable is returning the data for this base as follows:
 | -------- | ------------------------------------------ | -------- |
 | Dec 04 | Proposal Approval / Airtable Setup         | Incomplete |
 | Dec 04   | Component Creation                     | Incomplete |
-| Oct 13   | Get, Set, Delete Data               | Incomplete |
+| Dec 07   | Get, Set, Delete Data               | Incomplete |
 | Dec 07   | CSS Components                           | Incomplete |
 | Dec 10   | MVP                                        | Incomplete |
 | Dec 11   | Advanced CSS                               | Incomplete |
