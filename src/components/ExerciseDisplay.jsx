@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useHistory } from "react-router-dom"
 import { baseURL, config } from '../services'
 
 let ExerciseDisplay = (props) => {
@@ -9,11 +9,13 @@ let ExerciseDisplay = (props) => {
     return element.id === id
   })[0]
   const star = '⭐️'
+  let history = useHistory()
   
   const handleDelete = async () => {
     const exerciseURL = `${baseURL}/${exercise.id}`
     await axios.delete(exerciseURL, config)
-    props.setToggler((prev)=> !prev)
+    props.setToggler((prev) => !prev)
+    history.push('/')
   } 
 
   return (   

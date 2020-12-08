@@ -4,7 +4,8 @@ import { Route } from 'react-router-dom';
 import ExerciseList from './components/ExerciseList'
 import ExerciseDisplay from './components/ExerciseDisplay';
 import Form from './components/Form'
-import Nav from './components/Nav'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import axios from 'axios'
 import './App.css';
 
@@ -22,11 +23,7 @@ function App() {
   }, [toggler]) 
   return (
     <div className="App">
-      <header>
-        <h1>Muscle-Masons</h1>
-        <h3>You are the marble and the sculptor</h3>
-        <Nav/>
-      </header>
+      <Header />
       <Route exact path='/'>
       <div className='homePage'>
         {exercises.map(exercise => {
@@ -35,7 +32,7 @@ function App() {
       </div>
       </Route>
       <Route path = '/exercise/:id'>
-        <ExerciseDisplay exercises={exercises}/>
+        <ExerciseDisplay setToggler={setToggler} exercises={exercises}/>
       </Route>
       <Route path="/new">
         <Form setToggler={setToggler}/>
@@ -43,6 +40,7 @@ function App() {
       <Route path="/edit/:id">
         <Form exercises={exercises} setToggler={setToggler}/>
       </Route>
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+header{
+  flex: 0 1 auto;
+  padding: 20px;
+  background-color: #808080;
+  color: #faebd7;
+  text-shadow: 4px 4px 6px #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav a{
+  margin: 10px;
+  text-decoration: none;
+  color: #faebd7;
+}
+nav a:hover{
+  padding: 5px;
+  background-color: #faebd7;
+  color: #808080;
+  text-shadow: none;
+  border-radius: 8px;
+}
+header h1{
+  margin-top: 0;
+}
