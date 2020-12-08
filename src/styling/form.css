@@ -19,6 +19,7 @@ form{
   background-color: #808080;
   color: #faebd7;
   border-radius: 12px;
+  margin-bottom: 40px;
 }
 textarea{
   width: 300px;
