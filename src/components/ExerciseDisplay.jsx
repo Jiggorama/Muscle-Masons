@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useParams, Link, useHistory } from "react-router-dom"
 import { baseURL, config } from '../services'
-import '../styling/exerciseDisplay.css'
+// import '../styling/exerciseDisplay.css'
 
 let ExerciseDisplay = (props) => {
   let { id } = useParams()

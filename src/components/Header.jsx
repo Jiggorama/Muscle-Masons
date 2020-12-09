@@ -1,15 +1,15 @@
 import React from 'react';
 import Nav from './Nav'
-import '../styling/header.css'
+// import '../styling/header.css'
 
 const Header = () => {
   return (
-    <header className = 'bg-gray-400 bg-gradient-to-br from-gray-600 via-gray-200'>
+    <header className = 'bg-gray-400 bg-gradient-to-r from-gray-500 via-gray-600 flex flex-initial flex-col text-left'>
       <div className='text'>        
-    <h1>Muscle-Masons</h1>
+    <h1 className='text-2xl text-yellow-50'>Muscle-Masons</h1>
     <h3>You are the marble and the sculptor</h3>
       </div>
-    <Nav/>
+    <Nav />
   </header>
   );
 };

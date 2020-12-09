@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styling/exerciseList.css'
+// import '../styling/exerciseList.css'
 
 let ExerciseList = (props) => {
   const star = '⭐️'

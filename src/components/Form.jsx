@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import {useParams, useHistory} from 'react-router-dom'
 import axios from 'axios'
 import { baseURL, config } from '../services'
-import '../styling/form.css'
+// import '../styling/form.css'
 
 function Form(props) {
   const [name, setName] = useState('')
@@ -53,7 +53,7 @@ function Form(props) {
     history.push('/')
   }
   return (
-    <div className='form'>
+    <div className='form bg-gray-800'>
       {id ? <h1>The {name}</h1> : <h1>Add An Exercise</h1>}
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name</label>
