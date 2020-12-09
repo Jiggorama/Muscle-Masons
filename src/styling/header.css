@@ -19,6 +19,8 @@ nav a:hover{
   color: #808080;
   text-shadow: none;
   border-radius: 8px;
+  transition: transform .2s;
+  transform: scale(1.8);
 }
 header h1{
   margin-top: 0;

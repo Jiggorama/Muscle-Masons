@@ -3,6 +3,7 @@ import { baseURL, config } from './services'
 import { Route } from 'react-router-dom';
 import ExerciseList from './components/ExerciseList'
 import ExerciseDisplay from './components/ExerciseDisplay';
+import Home from './components/Home'
 import Form from './components/Form'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -24,8 +25,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route exact path='/'>
-      <div className='homePage'>
+      <Route exact path = '/'>
+        <Home/>
+      </Route>
+      <Route path='/exercise-list'>
+      <div className='listPage'>
         {exercises.map(exercise => {
           return <ExerciseList key={exercise.id} setToggler={setToggler} exercise={exercise}/>
         })}
