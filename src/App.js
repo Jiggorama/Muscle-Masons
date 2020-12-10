@@ -49,14 +49,14 @@ function App() {
           </div>
       </Route>
         <Route path="/new">
-          <div>
+        <div className='h-screen w-full flex flex-col justify-between'>
         <Header />
           <Form setToggler={setToggler} />
           <Footer/>
           </div>
       </Route>
         <Route path="/edit/:id">
-          <div>
+          <div className='h-screen w-full flex flex-col justify-between'>
         <Header />
         <Form exercises={exercises} setToggler={setToggler}/>
           <Footer/>
