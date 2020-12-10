@@ -42,7 +42,7 @@ function App() {
         </div>
       </Route>
         <Route path='/exercise/:id'>
-          <div>
+          <div className='h-screen w-full flex flex-col justify-between'>
         <Header />
           <ExerciseDisplay setToggler={setToggler} exercises={exercises} />
           <Footer/>

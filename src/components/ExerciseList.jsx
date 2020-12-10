@@ -5,7 +5,7 @@ let ExerciseList = (props) => {
   const star = '⭐️'
 
   return (
-    <div className='bg-gray-700 bg-gradient-to-br from-gray-600 via-gray-400 h-48 w-60 sm:h-48 sm:w-40 lg:h-auto lg:w-60 xl:w-80 m-6 text-center'>
+    <div className='bg-gray-700 bg-gradient-to-br from-gray-600 via-gray-400 h-48 w-60 sm:h-48 sm:w-40 lg:h-auto lg:w-60 xl:w-80 m-6 text-center transition duration-500 ease-in-out transform hover:scale-125'>
         <Link to={`/exercise/${props.exercise.id}`}>
     <div >
           <h3 className='text-gray-100 text-2xl lg:text-3xl xl:text-4xl pt-4'>{props.exercise.fields.name}</h3>
