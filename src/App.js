@@ -29,12 +29,14 @@ function App() {
         <Home/>
       </Route>
         <Route path='/exercise-list'>
-          <div className='h-full w-screen flex flex-col justify-between'>            
+          <div className='h-full w-full flex flex-col justify-between'>            
         <Header />
-      <div className='bg-gray-800 bg-gradient-to-b from-gray-800 via-gray-200 pt-8 flex-auto flex flex-wrap justify-evenly'>
+            <div className='bg-gray-300 bg-gradient-to-b from-gray-300 via-gray-100 flex justify-center'>
+              <div className=' pt-8 flex-auto flex flex-wrap justify-evenly max-w-screen-2xl'>
         {exercises.map(exercise => {
           return <ExerciseList key={exercise.id} setToggler={setToggler} exercise={exercise}/>
         })}
+              </div>
           </div>
           <Footer/>
         </div>

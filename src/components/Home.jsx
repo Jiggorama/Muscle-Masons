@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="bg-gray-700 bg-gradient-to-br from-gray-600 via-gray-400 h-screen p-2 flex flex-col">
-      <h1 className='text-4xl sm:text-5xl lg:text-6xl text-center pt-3 text-yellow-50' >Muscle-Masons</h1>
+      <h1 className='text-4xl sm:text-6xl lg:text-8xl text-center pt-4 lg:pt-8 text-orange-400' >Muscle-Masons</h1>
       <div className='h-4/5 flex flex-col justify-between max-w-screen-xl self-center sm:mt-16'>
       <div className ='mt-4'>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-900 sm:ml-16">
@@ -17,7 +17,7 @@ const Home = () => {
           <li>Add new exercises to our evergroing list</li>
         </ul>
         </div>
-        <div className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-yellow-50'>
+        <div className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700'>
       <Link to="/exercise-list">
         <button>Get Started</button>
       </Link>
