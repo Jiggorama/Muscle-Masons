@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import {useParams, useHistory} from 'react-router-dom'
 import axios from 'axios'
 import { baseURL, config } from '../services'
-import '../styling/form.css'
+// import '../styling/form.css'
 
 function Form(props) {
   const [name, setName] = useState('')
@@ -53,23 +53,30 @@ function Form(props) {
     history.push('/')
   }
   return (
-    <div className='form'>
-      {id ? <h1>The {name}</h1> : <h1>Add An Exercise</h1>}
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name</label>
-      <input
+    <div className='bg-gray-300 bg-gradient-to-b from-gray-300 via-gray-100 flex-auto flex flex-col items-center'>
+      {id ? <h1 className='mt-4 text-xl sm:text-4xl text-coolGray-800'>The {name}</h1> : <h1 className='mt-4 text-xl sm:text-4xl text-coolGray-800'>Add An Exercise</h1>}
+      
+    <form onSubmit={handleSubmit} className='flex flex-col self-center p-4 mt-4 mb-8 rounded-lg sm:bg-coolGray-800 sm:bg-gradient-to-br from-coolGray-800 via-gray-600 w-full sm:w-3/4 sm:max-w-lg'>
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="name">Name</label>
+        <input
+          className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         name='name'
         value={name}
         type="text"
         onChange={(e) => setName(e.target.value)} />
-      <label htmlFor="targeted">Target Muscle</label>
-      <input
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="targeted">Target Muscle</label>
+        <input
+          className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         name='targeted'
         value={targeted}
         type="text"
         onChange={(e) => setTargeted(e.target.value)} />
-      <label htmlFor="intensity">Intensity</label>
-      <select
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="intensity">Intensity</label>
+        <select
+          className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         type="number"
         name='intensity'
         // value={intensity}
@@ -81,25 +88,33 @@ function Form(props) {
           <option value={4}>4</option>
           <option value={5}>5</option> 
         </select>
-      <label htmlFor="directions">Directions</label>
-      <textarea
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="directions">Directions</label>
+        <textarea
+          className='focus:bg-orange-400 focus:text-gray-700 sm:text-xl  sm:h-24'
         name='directions'
         value={directions}
         onChange={(e) => setDirections(e.target.value)} ></textarea>
-      <label htmlFor="reps">#Reps</label>
-      <input
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="reps">#Reps</label>
+        <input
+          className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         name='reps'
         value={reps}
           type="number"
           min = '0'
           onChange={(e) => setReps(Number(e.target.value))} />
-      <label htmlFor="equipment">Equipment</label>
-      <input
+        <label className="text-coolGray-800 sm:text-warmGray-200 sm:text-xl lg:text-2xl"
+          htmlFor="equipment">Equipment</label>
+        <input
+          className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         name='equipment'
         value={equipment}
         type="text"
-        onChange={(e) => setEquipment(e.target.value)} />
+          onChange={(e) => setEquipment(e.target.value)} />
+        <div className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-2 mt-6 rounded-xl text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700 sm:bg-gray-300 sm:text-orange-500'>
       <button type='submit'>Submit!</button>
+        </div>
       </form>
       </div>
   )
