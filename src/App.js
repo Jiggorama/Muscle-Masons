@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { baseURL, config } from './services'
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import ExerciseList from './components/ExerciseList'
 import ExerciseDisplay from './components/ExerciseDisplay';
 import Home from './components/Home'
@@ -8,7 +8,7 @@ import Form from './components/Form'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import axios from 'axios'
-// import './App.css';
+import './App.css';
 
 function App() {
   const [exercises, setExercises] = useState([])
@@ -24,27 +24,44 @@ function App() {
   }, [toggler]) 
   return (
     <div className="App">
-      <Header />
+      <Switch>
       <Route exact path = '/'>
         <Home/>
       </Route>
-      <Route path='/exercise-list'>
-      <div className='listPage'>
+        <Route path='/exercise-list'>
+          <div className='h-full w-screen flex flex-col justify-between'>            
+        <Header />
+      <div className='bg-gray-800 bg-gradient-to-b from-gray-800 via-gray-200 pt-8 flex-auto flex flex-wrap justify-evenly'>
         {exercises.map(exercise => {
           return <ExerciseList key={exercise.id} setToggler={setToggler} exercise={exercise}/>
         })}
-      </div>
+          </div>
+          <Footer/>
+        </div>
       </Route>
-      <Route path = '/exercise/:id'>
-        <ExerciseDisplay setToggler={setToggler} exercises={exercises}/>
+        <Route path='/exercise/:id'>
+          <div>
+        <Header />
+          <ExerciseDisplay setToggler={setToggler} exercises={exercises} />
+          <Footer/>
+          </div>
       </Route>
-      <Route path="/new">
-        <Form setToggler={setToggler}/>
+        <Route path="/new">
+          <div>
+        <Header />
+          <Form setToggler={setToggler} />
+          <Footer/>
+          </div>
       </Route>
-      <Route path="/edit/:id">
+        <Route path="/edit/:id">
+          <div>
+        <Header />
         <Form exercises={exercises} setToggler={setToggler}/>
+          <Footer/>
+          </div>
       </Route>
-      <Footer/>
+     
+      </Switch>
     </div>
   );
 }
