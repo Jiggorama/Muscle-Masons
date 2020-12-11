@@ -33,7 +33,7 @@ function App() {
         <Home/>
       </Route>
         <Route path='/exercise-list'>
-          <div className='min-h-full w-full flex flex-col justify-between bg-gray-500 bg-gradient-to-b from-gray-500 via-gray-100'>            
+          <div className='min-h-screen h-full w-full flex flex-col justify-between bg-gray-500 bg-gradient-to-b from-gray-500 via-gray-100'>            
         <Header />
             <div className='flex justify-center'>
               <div className=' pt-8 flex-auto flex flex-wrap justify-evenly max-w-screen-2xl'>
@@ -46,7 +46,7 @@ function App() {
         </div>
         </Route>
         <Route exact path='/routine'>
-          <div className='min-h-full h-screen w-full flex flex-col justify-between bg-gray-500 bg-gradient-to-b from-gray-500 via-gray-100 '>            
+          <div className='min-h-screen h-full w-full flex flex-col justify-between bg-gray-500 bg-gradient-to-b from-gray-500 via-gray-100 '>            
         <Header />
             <div className='flex justify-center'>
               <div className=' pt-8 flex-auto flex flex-wrap justify-evenly max-w-screen-2xl'>
@@ -59,28 +59,28 @@ function App() {
         </div>
       </Route>
         <Route path='/exercise/:id'>
-          <div className='h-screen w-full flex flex-col justify-between'>
+          <div className='min-h-screen h-full w-full flex flex-col justify-between'>
         <Header />
           <ExerciseDisplay setToggler={setToggler} exercises={exercises} />
           <Footer/>
           </div>
         </Route>
         <Route path='/routine/:id'>
-          <div className='h-screen w-full flex flex-col justify-between'>
+          <div className='min-h-screen h-full w-full flex flex-col justify-between'>
         <Header />
           <RoutineDisplay setToggler={setToggler} exercises={routine} />
           <Footer/>
           </div>
       </Route>
         <Route path="/new">
-        <div className='h-screen w-full flex flex-col justify-between'>
+        <div className='min-h-screen h-full w-full flex flex-col justify-between'>
         <Header />
           <Form setToggler={setToggler} />
           <Footer/>
           </div>
       </Route>
         <Route path="/edit/:id">
-          <div className='h-screen w-full flex flex-col justify-between'>
+          <div className='min-h-screen h-full w-full flex flex-col justify-between'>
         <Header />
         <Form exercises={exercises} setToggler={setToggler}/>
           <Footer/>
