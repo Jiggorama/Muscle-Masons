@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { baseURL,routURL, config } from './services'
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import ExerciseList from './components/ExerciseList'
 import ExerciseDisplay from './components/ExerciseDisplay';
 import Home from './components/Home'
@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Routine from './components/Routine'
 import RoutineDisplay from './components/RoutineDisplay'
+import Four from './components/Four'
 import axios from 'axios'
 import './App.css';
 
@@ -85,7 +86,10 @@ function App() {
         <Form exercises={exercises} setToggler={setToggler}/>
           <Footer/>
           </div>
-      </Route>
+        </Route>
+        <Route path="/:404">
+        <Four/>
+        </Route>
      
       </Switch>
     </div>

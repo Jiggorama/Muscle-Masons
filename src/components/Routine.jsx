@@ -11,7 +11,7 @@ let Routine = (props) => {
     props.setToggler((prev) => !prev)
   }
   return (
-    <div className='bg-gray-700 bg-gradient-to-br from-gray-600 via-gray-400 h-auto w-60 sm:h-auto sm:w-40 lg:h-auto lg:w-60 xl:w-80 m-6 rounded-lg text-center transition duration-500 ease-in-out transform hover:scale-125'>
+    <div className='bg-gray-700 bg-gradient-to-br from-gray-600 via-gray-400 h-auto w-60 sm:h-auto sm:w-40 lg:h-auto lg:w-60 xl:w-80 m-6 rounded-lg text-center transition duration-500 ease-in-out transform hover:scale-125 shadow-2xl'>
         <Link to={`/routine/${props.exercise.id}`}>
     <div >
           <h3 className='text-gray-100 text-2xl lg:text-3xl xl:text-4xl pt-4'>{props.exercise.fields.name}</h3>
