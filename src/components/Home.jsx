@@ -14,7 +14,7 @@ const Home = () => {
           <li>Extensive list of exercises</li>
           <li>View and edit exercise details</li>
           <li>Create custome routines</li>
-          <li>Add new exercises to our evergroing list</li>
+          <li>Add new exercises to our evergrowing list</li>
         </ul>
         </div>
         <div className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700'>

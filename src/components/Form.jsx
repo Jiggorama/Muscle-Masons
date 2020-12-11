@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import {useParams, useHistory} from 'react-router-dom'
 import axios from 'axios'
 import { baseURL, config } from '../services'
-// import '../styling/form.css'
 
 function Form(props) {
   const [name, setName] = useState('')
@@ -14,7 +13,6 @@ function Form(props) {
 
   const {id} = useParams()
   const history = useHistory()
-  // console.log(history);
 
   useEffect(() => {
     if (id && props.exercises.length) {
@@ -50,7 +48,7 @@ function Form(props) {
     }
 
     props.setToggler((prev) => !prev)
-    history.push('/')
+    history.push('/exercise-list')
   }
   return (
     <div className='bg-gray-300 bg-gradient-to-b from-gray-300 via-gray-100 flex-auto flex flex-col items-center'>
@@ -79,7 +77,6 @@ function Form(props) {
           className='focus:bg-orange-400 focus:text-gray-700 text-center sm:text-xl lg:text-2xl'
         type="number"
         name='intensity'
-        // value={intensity}
           onChange={(e) => setIntensity(Number(e.target.value))}>
           <option value={intensity}>{intensity}</option>
           <option value={1}>1</option>

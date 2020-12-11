@@ -1,23 +1,13 @@
 import React from 'react'
-import axios from 'axios'
-import { useParams, Link, useHistory } from "react-router-dom"
-import { baseURL, config } from '../services'
 
-let ExerciseDisplay = (props) => {
+import { useParams, Link} from "react-router-dom"
+
+let RoutineDisplay = (props) => {
   let { id } = useParams()
   let exercise = props.exercises.filter(element => {
     return element.id === id
   })[0]
   const star = '⭐️'
-  let history = useHistory()
-  
-  const handleDelete = async () => {
-    const exerciseURL = `${baseURL}/${exercise.id}`
-    await axios.delete(exerciseURL, config)
-    props.setToggler((prev) => !prev)
-    history.push('/exercise-list')
-  } 
-
   return (   
     <div className='bg-coolGray-400 bg-gradient-to-br from-coolGray-400 via-gray-100 flex-auto flex flex-col justify-center items-center'> 
       {exercise ?
@@ -41,11 +31,9 @@ let ExerciseDisplay = (props) => {
             </div>
           </div>
             <div className='flex justify-center mb-8'>              
-            <Link to={`/edit/${exercise.id}`}>
-              <button className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700'>Edit</button>             
-            </Link>                   
-              <button onClick={handleDelete}
-              className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700 ml-8'>Delete</button>          
+            <Link to={`/routine`}>
+              <button className='w-auto self-center text-xl lg:text-2xl bg-gray-700 p-4 rounded-md text-orange-400 hover:bg-orange-400 hover:text-gray-700 border-4 border-gray-700 hover:border-gray-700'>Routine</button>             
+            </Link>                           
             </div>
         </div>
         : <h1>loading.....</h1>}
@@ -53,4 +41,4 @@ let ExerciseDisplay = (props) => {
   )
 }
 
-export default ExerciseDisplay
+export default RoutineDisplay
