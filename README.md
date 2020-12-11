@@ -1,6 +1,6 @@
 # Muscle-Masons
 
------future link ----
+https://musing-goldstine-e6abf2.netlify.app
 
 ## Project Description
 
@@ -86,35 +86,35 @@ Airtable is returning the data for this base as follows:
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-| Dec 04 | Proposal Approval / Airtable Setup         | Incomplete |
-| Dec 04   | Component Creation                     | Incomplete |
-| Dec 07   | Get, Set, Delete Data               | Incomplete |
-| Dec 07   | CSS Components                           | Incomplete |
-| Dec 10   | MVP                                        | Incomplete |
-| Dec 11   | Advanced CSS                               | Incomplete |
-| Dec 12   | Presentations                              | Incomplete |
+| Dec 04 | Proposal Approval / Airtable Setup         | Complete |
+| Dec 04   | Component Creation                     | Complete |
+| Dec 07   | Get, Set, Delete Data               | Complete |
+| Dec 07   | CSS Components                           | Complete |
+| Dec 10   | MVP                                        | Complete |
+| Dec 11   | Advanced CSS                               | Complete |
+| Dec 12   | Presentations                              | Complete |
 
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |     --    |   --   |
-| Airtable setup            |    H     |     1hrs       |     --    |   --   |
-| Nav Bar/Header            |    H     |      3hrs      |     --    |   --   |
-| Main Page                 |    H     |      3hrs      |     --    |   --   |
-| Create Page               |    H     |      3hrs      |     --    |   --   |
-| Routine Page              |    H     |      3hrs      |     --    |   --   |
-| Form creation             |    H     |      3hrs      |     --    |   --   |
-| Link form to Airtable     |    H     |      3hrs      |     --    |   --   |
-| Link routine to Airtable  |    H     |      3hrs      |     --    |   --   |
-| React mapping and logic   |    H     |      3hrs      |     --    |   --   |
-| Linking and Routing       |    H     |      2hrs      |     --    |   --   |
-| Data deletion             |    H     |      2hrs      |     --    |   --   |
-| CSS Routine               |    H     |      3hrs      |     --    |   --   |
-| CSS Homepage              |    H     |      3hrs      |     --    |   --   |
-| CSS Showpage              |    H     |      3hrs      |     --    |   --   |
-| CSS Form                  |    H     |      3hrs      |     --    |   --   |
-| Total                     |    H     |      43hrs     |     --    |   --   |
+| Proposal                  |    H     |      2hrs      |     1    |   1   |
+| Airtable setup            |    H     |     1hrs       |     1.5    |   2.5   |
+| Nav Bar/Header            |    H     |      3hrs      |     3    |   5.5   |
+| Main Page                 |    H     |      3hrs      |     3    |   8.5   |
+| Create Page               |    H     |      3hrs      |     3    |   11.5   |
+| Routine Page              |    H     |      3hrs      |     3    |   14.5   |
+| Form creation             |    H     |      3hrs      |     4    |   18.5   |
+| Link form to Airtable     |    H     |      3hrs      |     1   |   19.5   |
+| Link routine to Airtable  |    H     |      3hrs      |     2    |   21.5   |
+| React mapping and logic   |    H     |      3hrs      |     4    |   25.5   |
+| Linking and Routing       |    H     |      2hrs      |     1    |   26.5   |
+| Data deletion             |    H     |      2hrs      |     1   |   27.5   |
+| CSS Routine               |    H     |      3hrs      |     3    |   30.5   |
+| CSS Homepage              |    H     |      3hrs      |     3.5   |   34   |
+| CSS Showpage              |    H     |      3hrs      |     4    |   38   |
+| CSS Form                  |    H     |      3hrs      |     4    |   42   |
+| Total                     |    H     |      43hrs     |     42    |   42   |
 
 ## SWOT Analysis
 
