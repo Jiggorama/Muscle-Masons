@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { baseURL,routURL, config } from './services'
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch} from 'react-router-dom';
 import ExerciseList from './components/ExerciseList'
 import ExerciseDisplay from './components/ExerciseDisplay';
 import Home from './components/Home'
