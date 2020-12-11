@@ -87,7 +87,7 @@ function App() {
           <Footer/>
           </div>
         </Route>
-        <Route path="/:404">
+        <Route >
         <Four/>
         </Route>
      
