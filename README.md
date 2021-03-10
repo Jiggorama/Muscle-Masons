@@ -4,7 +4,7 @@ https://musing-goldstine-e6abf2.netlify.app
 
 ## Project Description
 
-Muscle-Masons is an interactive fitness app built in React with an Airtable database.  The app allows users to view and update a collection of exercises which can be sorted by the main muscles worked by the exercise. The user also has the ability to create a workout routine.
+Muscle-Masons is an interactive fitness app built in React with an Airtable database.  The app allows users to view and update a collection of exercises. The user also has the ability to create a workout routine.
 
 ## Wireframes
 
@@ -31,7 +31,7 @@ Airtable is returning the data for this base as follows:
             "fields": {
                 "name": "Push-Up",
                 "target": "Chest/Shoulders",
-                "directions": "Start in a  plank position with your arms straight. Your shoulders should be over your wrists and your body should form a straight line. Keep your cor...",
+                "directions": "Start in a plank position with your arms straight. Your shoulders should be over your wrists and your body should form a straight line. Keep your cor...",
                 "reps": 20,
                 "Equipment": "Bodyweight",
                 "intensity": 3
@@ -120,7 +120,7 @@ Airtable is returning the data for this base as follows:
 
 ### Strengths:
 
-I have a good understanding of what i want my application to look like and what exactly I want it to do. As such, I can better plan for what needs to be done and how long it will take. 
+I have a good understanding of what I want my application to look like and what exactly I want it to do. As such, I can better plan for what needs to be done and how long it will take. 
 
 ### Weaknesses:
 
@@ -128,7 +128,7 @@ Taking the project and breaking down the task at hand into smaller parts.  I get
 
 ### Opportunities:
 
-To create a portfolio show piece that I am prod to show off. This app could be something useable and useful
+To create a portfolio show piece that I am proud to show off. This app could be something useable and useful
 
 ### Threats:
 

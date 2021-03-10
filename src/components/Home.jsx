@@ -12,7 +12,7 @@ const Home = () => {
         </h2>
         <ul className="text-center text-yellow-50 mt-2 sm:mt-12 sm:leading-relaxed lg:text-xl " >
           <li>Extensive list of exercises</li>
-          <li>View and edit exercise details</li>
+          <li>View and Edit exercise details</li>
           <li>Create custome routines</li>
           <li>Add new exercises to our evergrowing list</li>
         </ul>

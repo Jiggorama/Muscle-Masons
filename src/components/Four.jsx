@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 const Four = () => {
   return (
     <div className='flex flex-col items-center justify-evenly'>
-                         
     <h3 className="text-center mt-4">You're on the wrong page!</h3>
     <img
       className="h-44 w-44 mt-8"
